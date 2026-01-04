@@ -1,0 +1,39 @@
+{
+    "profile":{
+        "fullname": "name",
+        "occupation": "occupation",
+        "description": "description"
+    },
+    "actual_languages":[
+        {
+            "name": "string",
+            "badge_url": "url"
+        }
+    ],
+    "new_languages":[
+        {
+            "name": "string",
+            "badge_url": "url"
+        }
+    ],
+    "projects":[
+        {
+            "name": "in_progress_project",
+            "description": "project",
+            "category": "in_progress",
+            "progress": 45,
+            "status": "En desarrollo",
+            "repo_url": "https://github.com/user/project_name",
+            "stack": ["1", "2"]
+        },
+        {
+            "name": "finished_project",
+            "description": "project",
+            "category": "finished",
+            "progress": null,
+            "status": null,
+            "repo_url": "https://github.com/user/project_name",
+            "stack": ["1", "2"]
+        }
+    ]
+}
