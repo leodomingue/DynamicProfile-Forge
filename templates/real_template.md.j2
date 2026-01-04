@@ -1,0 +1,56 @@
+# {{ profile.fullname }}
+### {{ profile.occupation }}
+
+---
+
+## 👤 Sobre mí
+
+{{ profile.description }}
+
+---
+
+## 🛠️ Lenguajes que he utilizado
+
+{% for language in actual_languages -%}
+![{{ language.name }}]({{ language.badge_url }})
+{% endfor %}
+
+---
+## 🛠️ Lenguajes que deseo aprender
+
+{% for language in new_languages -%}
+![{{ language.name }}]({{ language.badge_url }})
+{% endfor %}
+
+---
+
+## 🚧 Proyectos en progreso
+
+| Proyecto | Descripción | Progreso | Estado | Repo |
+|----------|-------------|----------|--------|------|
+{% for project in projects.in_progress -%}
+| **{{ project.name }}** | {{ project.description }} | ![{{ project.progress }}%]({{ project.progress_badge_url }}) | {{ project.status }} | [Ver repo](https://github.com/{{ project.github.owner }}/{{ project.github.repo }}) |
+{% endfor %}
+
+---
+
+## ✅ Proyectos finalizados
+
+{% for project in projects.finished -%}
+### [**{{ project.name }}**]({{ https://github.com/{{ project.github.owner }}/{{ project.github.repo }} }})
+{{ project.description }}
+- ![GitHub stars](https://img.shields.io/github/stars/{{ project.github.owner }}/{{ project.github.repo }}?style=social)
+{% endfor %}
+
+
+---
+
+## 📊 Estadísticas
+![Github Stats](https://github-readme-stats-eight-theta.vercel.app/api?username={{ profile.username }}&show_icons=true&count_private=true&theme=tokyonight)
+
+---
+
+## 📫 Contacto
+{% for social_media in profile.addional_info -%}
+![{{ social_media.social_media_name }}]({{ social_media.url }})
+{% endfor %}
