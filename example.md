@@ -54,9 +54,7 @@ Soy un estudiante en la carrera de **Ciencia de Datos en la Universidad de Bueno
 
 ## 📊 Estadísticas
 
-![Github Stats](https://github-readme-stats.vercel.app/api?username=leodomingue&show_icons=true&theme=tokyonight&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=leodomingueI&layout=compact&theme=tokyonight)
+![Github Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=leodomingue&show_icons=true&count_private=true&theme=tokyonight)
 
 ---
 
