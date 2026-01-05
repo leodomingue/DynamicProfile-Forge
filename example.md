@@ -41,7 +41,7 @@ Soy un estudiante en la carrera de **Ciencia de Datos en la Universidad de Bueno
 ---
 ## ⚠️ Proyectos semi-abandonados
 
-### [**Conway's Game of Life Pygame**](https://github.com/leodomingue/Conway-s-Game-of-Life-Pygame)
+### [**NeopiaBot**](https://github.com/leodomingue/NeopiaBot)
 - ![GitHub stars](https://img.shields.io/github/stars/leodomingue/NeopiaBot?style=social)
 - Stack: JavaScript
 
