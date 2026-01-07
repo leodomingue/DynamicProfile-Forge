@@ -7,7 +7,7 @@ data_mock = {
         "occupation": "Estudiante",
         "description": "Hago cosas",
         "username": "leodomingue",
-        "addional_info": [
+        "additional_info": [
             {
                 "social_media_name": "Linkedin",
                 "url": "https://www.linkedin.com/in/leo-dominguez-a6a113222/"

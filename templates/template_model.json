@@ -4,7 +4,7 @@
         "occupation": "occupation",
         "description": "description",
         "username": "username",
-        "addional_info": [
+        "additional_info": [
             {
                 "social_media_name": "social_media",
                 "url": "social_media_link"

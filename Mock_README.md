@@ -47,4 +47,4 @@ Simulador de conway
 ---
 
 ## 📫 Contacto
-![Linkedin](https://www.linkedin.com/in/leo-dominguez-a6a113222/)
+[![Linkedin](https://img.shields.io/badge/Linkedin-blue?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/leo-dominguez-a6a113222/)
