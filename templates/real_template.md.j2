@@ -28,7 +28,7 @@
 
 | Proyecto | Descripción | Progreso | Estado | Repo |
 |----------|-------------|----------|--------|------|
-{% for project in projects.in_progress -%}
+{% for project in projects if project.category == 'in_progress' -%}
 | **{{ project.name }}** | {{ project.description }} | ![{{ project.progress }}%]({{ project.progress_badge_url }}) | {{ project.status }} | [Ver repo](https://github.com/{{ project.github.owner }}/{{ project.github.repo }}) |
 {% endfor %}
 
@@ -36,8 +36,8 @@
 
 ## ✅ Proyectos finalizados
 
-{% for project in projects.finished -%}
-### [**{{ project.name }}**]({{ https://github.com/{{ project.github.owner }}/{{ project.github.repo }} }})
+{% for project in projects if project.category == 'finished' -%}
+### [**{{ project.name }}**](https://github.com/{{ project.github.owner }}/{{ project.github.repo }})
 {{ project.description }}
 - ![GitHub stars](https://img.shields.io/github/stars/{{ project.github.owner }}/{{ project.github.repo }}?style=social)
 {% endfor %}
