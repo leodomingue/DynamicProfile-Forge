@@ -27,7 +27,7 @@
         {
             "name": "in_progress_project",
             "description": "project",
-            "category": "in_progress",
+            "category": "special",
             "progress": 45,
             "status": "En desarrollo",
             "github": {
@@ -40,8 +40,6 @@
             "name": "finished_project",
             "description": "project",
             "category": "finished",
-            "progress": null,
-            "status": null,
             "github": {
                 "owner": "user",
                 "repo": "project_name"

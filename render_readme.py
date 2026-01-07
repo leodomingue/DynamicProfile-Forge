@@ -1,5 +1,6 @@
 from jinja2 import Environment, FileSystemLoader
 from pathlib import Path
+from extra_functions import split_projects
 
 data_mock = {
     "profile":{
@@ -30,7 +31,7 @@ data_mock = {
         {
             "name": "Python-Coding-Challenge",
             "description": "Retos randoms de internet",
-            "category": "in_progress",
+            "category": "special",
             "progress": 45,
             "status": "En desarrollo",
             "github": {
@@ -50,10 +51,24 @@ data_mock = {
                 "repo": "Conway-s-Game-of-Life-Pygame"
                 },
             "stack": ["Python", "2"]
-        }
+        },
+        {
+            "name": "Conway's Game of Life Pygame",
+            "description": "Simulador de conway",
+            "category": "in_progress",
+            "progress": 20,
+            "status": "En desarrollo",
+            "github": {
+                "owner": "leodomingue",
+                "repo": "Conway-s-Game-of-Life-Pygame"
+                },
+            "stack": ["Python", "2"]
+        },
+
     ]
 }
 
+data_mock["projects"] = split_projects(data_mock["projects"])
 env = Environment(loader=FileSystemLoader("templates"))
 template = env.get_template("real_template.md.j2")
 output = template.render(**data_mock)
