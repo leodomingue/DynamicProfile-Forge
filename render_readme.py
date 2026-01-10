@@ -1,72 +1,10 @@
 from jinja2 import Environment, FileSystemLoader
+import yaml
 from pathlib import Path
 from extra_functions import split_projects
 
-data_mock = {
-    "profile":{
-        "fullname": "nombre cualquiera",
-        "occupation": "Estudiante",
-        "description": "Hago cosas",
-        "username": "leodomingue",
-        "additional_info": [
-            {
-                "social_media_name": "Linkedin",
-                "url": "https://www.linkedin.com/in/leo-dominguez-a6a113222/"
-            }
-        ]
-    },
-    "actual_languages":[
-        {
-            "name": "Python",
-            "badge_url": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
-        }
-    ],
-    "new_languages":[
-        {
-            "name": "Javascript",
-            "badge_url": "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-        }
-    ],
-    "projects":[
-        {
-            "name": "Python-Coding-Challenge",
-            "description": "Retos randoms de internet",
-            "category": "special",
-            "progress": 45,
-            "status": "En desarrollo",
-            "github": {
-                "owner": "leodomingue",
-                "repo": "Python-Coding-Challenges"
-                },
-            "stack": ["Python", "2"]
-        },
-        {
-            "name": "Conway's Game of Life Pygame",
-            "description": "Simulador de conway",
-            "category": "finished",
-            "progress": None,
-            "status": None,
-            "github": {
-                "owner": "leodomingue",
-                "repo": "Conway-s-Game-of-Life-Pygame"
-                },
-            "stack": ["Python", "2"]
-        },
-        {
-            "name": "Conway's Game of Life Pygame",
-            "description": "Simulador de conway",
-            "category": "in_progress",
-            "progress": 20,
-            "status": "En desarrollo",
-            "github": {
-                "owner": "leodomingue",
-                "repo": "Conway-s-Game-of-Life-Pygame"
-                },
-            "stack": ["Python", "2"]
-        },
-
-    ]
-}
+with open("data_mock.yaml", "r", encoding="utf-8") as f:
+    data_mock = yaml.safe_load(f)
 
 data_mock["projects"] = split_projects(data_mock["projects"])
 env = Environment(loader=FileSystemLoader("templates"))
