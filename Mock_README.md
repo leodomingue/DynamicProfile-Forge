@@ -27,7 +27,7 @@ Hago cosas
 | Proyecto | Descripción | Progreso | Estado | Repo |
 |----------|-------------|----------|--------|------|
 | **Python-Coding-Challenge** | Retos randoms de internet | ![progreso](https://img.shields.io/badge/progreso-∞-blue) | En desarrollo | [Ver repo](https://github.com/leodomingue/Python-Coding-Challenges) |
-| **Conway's Game of Life Pygame** | Simulador de conway | ![progreso](https://img.shields.io/badge/progreso-20%25-red) | En desarrollo | [Ver repo](https://github.com/leodomingue/Conway-s-Game-of-Life-Pygame) |
+| **Python-Coding-Challenge** | Retos randoms de internet | ![progreso](https://img.shields.io/badge/progreso-20%25-red) | En desarrollo | [Ver repo](https://github.com/leodomingue/Python-Coding-Challenges) |
 
 
 ---
